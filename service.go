@@ -63,6 +63,7 @@ type TextDocumentClientCapabilities struct {
 		CompletionItem struct {
 			SnippetSupport bool `json:"snippetSupport,omitempty"`
 		} `json:"completionItem,omitempty"`
+		ContextSupport bool `json:"contextSupport"`
 	} `json:"completion,omitempty"`
 
 	Implementation *struct {
